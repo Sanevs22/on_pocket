@@ -1,0 +1,77 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+}
+
+
+.name {
+    position: absolute;
+    width: 560px;
+    height: 110px;
+    left: calc(50% - 560px/2);
+    top: calc(50% - 110px/2 - 270px);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 70px;
+    text-align: center;
+    color: #000000;
+}
+
+.pocket {
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    left: calc(50% - 350px/2);
+    top: 265px;
+    background: #D9D9D9;
+    border-radius: 35px;
+}
+
+.date {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+}
+
+.cash {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom:20px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 36px;    
+    line-height: 36px; 
+    color: #000000;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 35px;
+    background: #000000;
+    border: none;
+}
+
+input {
+    width: 217px;
+    height: 56px;
+    margin-left: 30px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    font-size: 28px;   
+    border: none;
+}
+
+.res {
+    font-style: normal;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 58px;
+    text-align: center;
+    color: #000000;
+}
