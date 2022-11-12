@@ -28,7 +28,7 @@ body {
     border-radius: 35px;
 }
 
-.date {
+#date {
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -70,7 +70,7 @@ input {
     border: none;
 }
 
-.res {
+#res {
     font-style: normal;
     margin-top: 10px;
     font-weight: 700;
