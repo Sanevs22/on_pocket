@@ -49,16 +49,19 @@ body {
 }
 
 button {
-    width: 40px;
+    width: 140px;
     height: 40px;
-    margin-left: 20px;
-    border-radius: 35px;
-    background: #000000;
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 15px;
+    background: #ffffff;
     border: none;
+    font-weight: 100;
+    font-size: 30px;   
 }
 
 input {
-    width: 217px;
+    width: 280px;
     height: 56px;
     margin-left: 30px;
     background: #FFFFFF;
