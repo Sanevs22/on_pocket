@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #007CBA;
+}
+
+.main {
+    background-color: #007CBA;
+    margin-left: auto;
+    margin-right: auto;
+    width: 275px;
+    height: 570px;
+    color: rgb(255, 255, 255);
+    padding: 32px 20px 15px 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.title {
+    font-size: 20px;
+    text-align: center;
+}
+
+.title2 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.plan {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+
+.day {
+    margin-bottom: 15px;
+}
+
+.spend {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.spend2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.in {
+    font-family: 'Press Start 2P', cursive;
+    text-align: right;
+    font-size: 16px;
+    width: 120px;
+    border: 3px solid #FFFFFF;
+    background-color: #007CBA;
+    color: #ffffff;
+    height: 26px;
+}
+
+.in2 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 16px;
+    width: 196px;
+    border: 3px solid #FFFFFF;
+    background-color: #007CBA;
+    color: #ffffff;
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    
+}
+
+.today {
+ visibility: visible;
+}
+
+::placeholder { 
+    color: rgb(255, 255, 255);
+    opacity: 1;
+  }
