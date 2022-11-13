@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Press Start 2P', cursive;
-    background-color: #007CBA;
+    background-color: green;
 }
 
 .main {
@@ -12,7 +12,6 @@ body {
     width: 275px;
     height: 570px;
     color: rgb(255, 255, 255);
-    padding: 32px 20px 15px 25px;
     position: absolute;
     top: 50%;
     left: 50%;
