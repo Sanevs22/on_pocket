@@ -1,9 +1,10 @@
+
 body {
     font-family: 'Press Start 2P', cursive;
     font-weight: normal;
-    width: 320px;
+    width: 350px;
     background-color: #007CBA;
-    text-align: center;
+    margin: 0 auto;
     border: 5px solid #FFFFFF;
 }
 
@@ -37,6 +38,7 @@ button {
     border: none;
     font-weight: 100;
     font-size: 30px;   
+    
 }
 
 input {
@@ -47,6 +49,8 @@ input {
     background: #007CBA;
     font-size: 28px;  
     border: 5px solid #FFFFFF;
+    color: #ffffff;
+
     }
 
 #res {
