@@ -1,80 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
-    font-family: 'Inter', sans-serif;
-    font-weight: normal;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #007CBA;
 }
 
-
-.name {
+.main {
+    background-color: #007CBA;
+    margin-left: auto;
+    margin-right: auto;
+    width: 275px;
+    height: 570px;
+    color: rgb(255, 255, 255);
+    padding: 32px 20px 15px 25px;
     position: absolute;
-    width: 560px;
-    height: 110px;
-    left: calc(50% - 560px/2);
-    top: calc(50% - 110px/2 - 270px);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 58px;
-    line-height: 70px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.title {
+    font-size: 20px;
     text-align: center;
-    color: #000000;
 }
 
-.pocket {
-    position: absolute;
-    width: 350px;
-    height: 500px;
-    left: calc(50% - 350px/2);
-    top: 265px;
-    background: #D9D9D9;
-    border-radius: 35px;
-}
-
-#date {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
+.title2 {
+    font-size: 20px;
     text-align: center;
-    color: #000000;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
-.cash {
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-bottom:20px;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 36px;    
-    line-height: 36px; 
-    color: #000000;
-}
-
-button {
-    width: 140px;
-    height: 40px;
-    margin-top: 10px;
-    margin-left: 100px;
-    border-radius: 15px;
-    background: #ffffff;
-    border: none;
-    font-weight: 100;
-    font-size: 30px;   
-}
-
-input {
-    width: 280px;
-    height: 56px;
-    margin-left: 30px;
-    background: #FFFFFF;
-    border-radius: 15px;
-    font-size: 28px;   
-    border: none;
-}
-
-#res {
-    font-style: normal;
-    margin-top: 10px;
-    font-weight: 700;
-    font-size: 58px;
+.plan {
     text-align: center;
-    color: #000000;
+    font-size: 16px;
+    margin-bottom: 40px;
 }
+
+
+.day {
+    margin-bottom: 15px;
+}
+
+.spend {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.spend2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.in {
+    font-family: 'Press Start 2P', cursive;
+    text-align: right;
+    font-size: 16px;
+    width: 120px;
+    border: 3px solid #FFFFFF;
+    background-color: #007CBA;
+    color: #ffffff;
+    height: 26px;
+}
+
+.in2 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 16px;
+    width: 196px;
+    border: 3px solid #FFFFFF;
+    background-color: #007CBA;
+    color: #ffffff;
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    
+}
+
+.today {
+ visibility: visible;
+}
+
+::placeholder { 
+    color: rgb(255, 255, 255);
+    opacity: 1;
+  }
