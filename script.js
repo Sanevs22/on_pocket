@@ -1,17 +1,77 @@
-var Date = new Date;
-console.log(Date);
-var day = Date.getDay();
-console.log(day);
+var date = new Date;
+console.log(date);
 
+// Ставит монетку напротив текущего дня недели.
+function toDay() {
+    var dayOfWeek = date.getDay();
+    console.log(dayOfWeek);
+    if (dayOfWeek === 0) {
+        dayOfWeek = 7;
+    }
+    document.querySelector('#d' + dayOfWeek + ' .today').style.visibility = 'visible';
+}
 
-
+// 
 function conectDate() {
-    for (var d=0; d <=6; d++) {
-        document.querySelector('#d'+d+ ' .celendertext').textContent = Date.getDate() + d-1;
+    var dayOfWeek = date.getDay();
+    var day = date.getDate();
+    console.log(day, dayOfWeek);
+    if (dayOfWeek === 0) {
+        dayOfWeek = 7;
+    }
+    date.setDate(day - dayOfWeek);
+    dayOfWeek = date.getDay();
+    day = date.getDate();
+    console.log(day, dayOfWeek);
+
+    for (var d=1; d <=7; d++) {
+        date.setDate(day + d);
+        document.querySelector('#d' + d + ' .celendertext').textContent = date.getDate();
     }
 }
 
+function save() {
+    var sum = 0; 
+    for (var d=1; d <=7; d++) {
+        sum =  sum + Number( document.querySelector('#d' + d + ' .in').value);
+    }
+    document.querySelector('#res').textContent = sum;
+    
+
+}
+
+
+
+// Ниже написаны события изменения значений в input, возникли сложности с 
+// работой функции, если выбирал элемент по классу, поэтому написал 7 функций 
+// по id - в дальнейшем разобраться и переделать
+
+document.querySelector('#d1').onchange = function() {
+    save();
+}
+document.querySelector('#d2').onchange = function() {
+    save();
+}
+document.querySelector('#d3').onchange = function() {
+    save();
+}
+document.querySelector('#d4').onchange = function() {
+    save();
+}
+document.querySelector('#d5').onchange = function() {
+    save();
+}
+document.querySelector('#d6').onchange = function() {
+    save();
+}
+document.querySelector('#d7').onchange = function() {
+    save();
+}
+
+// Main
+toDay();
 conectDate();
+
 
 /*
 var p = document.getElementById('plan'); 

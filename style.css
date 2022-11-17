@@ -121,7 +121,7 @@ body {
 }
 
 .today {
- visibility: visible;
+ visibility: hidden;
 }
 
 ::placeholder { 

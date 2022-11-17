@@ -2,7 +2,7 @@ var Date = new Date;
 console.log(Date);
 
 
-
+// Анимация нажатия кнопки.
 document.querySelector('#bigButton').onclick = function() {
     console.log(23423);
     document.querySelector('#bigButton').style.visibility = 'hidden';
