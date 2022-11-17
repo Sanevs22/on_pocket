@@ -36,8 +36,12 @@ function save() {
         sum =  sum + Number( document.querySelector('#d' + d + ' .in').value);
     }
     document.querySelector('#res').textContent = sum;
-    
 
+
+}
+
+document.querySelector('.main').onclick = function() {
+    console.log(77777);
 }
 
 
