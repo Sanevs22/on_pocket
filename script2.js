@@ -1,50 +1,35 @@
-var Date = new Date;
-console.log(Date);
+var date = new Date;
+console.log(date);
+
+var dayOfWeek = date.getDay();
+console.log(dayOfWeek);
+if (dayOfWeek === 0) {
+    dayOfWeek = 7;
+}
+
+document.querySelector('#d_p2').textContent = (date.getDate() + '/' + Number( date.getMonth()+1) + '/' + date.getFullYear());
 
 
-// Анимация нажатия кнопки.
+
+function ost() {
+    var planDoc = JSON.parse(localStorage.getItem("onPocket"));
+    var faktDoc = JSON.parse(localStorage.getItem("onPocketFakt"));
+    document.querySelector('#planVal').textContent = planDoc[dayOfWeek].plan;
+    document.querySelector('#ost').textContent = planDoc[dayOfWeek].plan - faktDoc[dayOfWeek].fakt;
+}
+
+ost();
+
 document.querySelector('#bigButton').onclick = function() {
-    console.log(23423);
+    // Анимация нажатия кнопки.
     document.querySelector('#bigButton').style.visibility = 'hidden';
     setTimeout(() => { document.querySelector('#bigButton').style.visibility = 'visible'; }, 200); 
+    // Пересчет и сохранение значений
+    var faktDoc = JSON.parse(localStorage.getItem("onPocketFakt"));
+    var temp = {};
+    temp.fakt = Number( faktDoc[dayOfWeek].fakt) + Number( document.querySelector('.in2').value);
+    faktDoc[dayOfWeek] = temp;
+    localStorage.setItem("onPocketFakt", JSON.stringify(faktDoc));
+    ost();
+    document.querySelector('.in2').value = null ;
 }
-
-
-
-/*
-var p = document.getElementById('plan'); 
-var t = document.getElementById('trat');
-var ost = document.getElementById('res');
-
-var Date = new Date;
-var month = Date.getMonth() + 1;
-var time = Date.getDate() +'.' + month +'.' + Date.getFullYear();
-document.getElementById('date').textContent = time;
-
-if(localStorage.getItem('plan')) {
-    p.value = Number(localStorage.getItem('plan'));
-} else {
-    p.value = 100;
-}
-
-if(localStorage.getItem('trat')) {
-    t.value = Number(localStorage.getItem('trat'));
-} else {
-    t.value = 0;
-}
-
-if(localStorage.getItem('time') !== time) {
-    p.value = Number(localStorage.getItem('ost')) + 100;
-    t.value = 0;
-} 
-
-ost.textContent = p.value-t.value;
-
-document.querySelector('button').onclick = function() {
-    ost.textContent = p.value-t.value;
-    localStorage.setItem('ost', ost.textContent);
-    localStorage.setItem('time', time);
-    localStorage.setItem('plan', p.value);
-    localStorage.setItem('trat', t.value);
-}
-*/
