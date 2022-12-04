@@ -19,9 +19,10 @@ function toDay() {
 
 
 function conectDate() {
-    var dayOfWeek = date.getDay();
+    dayOfWeek = date.getDay();
     var day = date.getDate();
     console.log(day, dayOfWeek);
+
     if (dayOfWeek === 0) {
         dayOfWeek = 7;
     }
@@ -29,9 +30,13 @@ function conectDate() {
     dayOfWeek = date.getDay();
     day = date.getDate();
     console.log(day, dayOfWeek);
+    var month=date.getMonth();
 
     for (var d=1; d <=7; d++) {
+        date.setMonth(month);
         date.setDate(day + d);
+
+        console.log(date);
         document.querySelector('#d' + d + ' .celendertext').textContent = date.getDate();
     }
 }
